@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Vision Test</title>
+    <link rel="stylesheet" href="style.css">   
+</head>
+<body>
+    <h1> <u> Color Vision Test </u> </h1> 
+    <h3> Pick the color that matches the one shown.</h3>
+
+    <table style="margin-left: auto; margin-right: auto; margin-bottom: 60px; margin-top: 80px;">
+        <tr>
+            <td> <table id="scorebox"> <td id="scoretext">0/0</td></table></td>
+            <td> <table id="maincolortable" onclick="maincolorToClipboard()"> <td id="maincolortext" onmouseover="maincolortextOver()" onmouseleave="maincolortextLeave()"> #?????? </td> </table> </td>
+            <td> <table id="percentagebox"> <td id="perctext">100%</td> </table></td>
+        </tr>
+    </table>
+    
+
+    <!-- this will be the horizontal table of color button, i.e more tables-->
+    <table style="margin-left: auto; margin-right: auto; margin-bottom: 100px">
+        <tr>
+            <td> <table class="choosebutton" id="but1" onclick="cbut_click(0)" onmouseover="squeeze(0)" onmouseleave="release(0)"></table></td>
+            <td> <table class="choosebutton" id="but2" onclick="cbut_click(1)" onmouseover="squeeze(1)" onmouseleave="release(1)"></table></td>
+            <td> <table class="choosebutton" id="but3" onclick="cbut_click(2)" onmouseover="squeeze(2)" onmouseleave="release(2)"></table></td>
+            <td> <table class="choosebutton" id="but4" onclick="cbut_click(3)" onmouseover="squeeze(3)" onmouseleave="release(3)"></table></td>
+            <td> <table class="choosebutton" id="but5" onclick="cbut_click(4)" onmouseover="squeeze(4)" onmouseleave="release(4)"></table></td>
+        </tr>
+    </table>
+    
+    <p> Made by <a href="https://jovan-jankovic.itch.io/" target="_blank">Jovan Jankovic</a></p>
+    <br>
+
+    <script src="script.js"></script>
+</body>
+</html>
